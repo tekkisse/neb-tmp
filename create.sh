@@ -1,3 +1,5 @@
+./nebula-cert sign -name "lighthouse" -ip "192.168.100.1/24" 
+
 ./nebula-cert sign -name "server1" -ip "192.168.100.20/24" -groups "servers"
 ./nebula-cert sign -name "server2" -ip "192.168.100.21/24" -groups "servers"
 ./nebula-cert sign -name "server3" -ip "192.168.100.22/24" -groups "servers"
