@@ -196,10 +196,10 @@ relay:
   # IPs in this list must have am_relay set to true in their configs, otherwise
   # they will reject relay requests.
   relays:
-    - 192.168.100.1
+    - 192.168.100.21
     #- <other Nebula VPN IPs of hosts used as relays to access me>
   # Set am_relay to true to permit other hosts to list my IP in their relays config. Default false.
-  am_relay: true
+  am_relay: false
   # Set use_relays to false to prevent this instance from attempting to establish connections through relays.
   # default true
   use_relays: true
@@ -211,7 +211,7 @@ tun:
   # Name of the device. If not set, a default will be chosen by the OS.
   # For macOS: if set, must be in the form `utun[0-9]+`.
   # For NetBSD: Required to be set, must be in the form `tun[0-9]+`
-  dev: nebula1
+  dev: nebula3
   # Toggles forwarding of local broadcast packets, the address of which depends on the ip/mask encoded in pki.cert
   drop_local_broadcast: false
   # Toggles forwarding of multicast packets

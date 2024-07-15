@@ -153,7 +153,7 @@ punchy:
   # respond means that a node you are trying to reach will connect back out to you if your hole punching fails
   # this is extremely useful if one node is behind a difficult nat, such as a symmetric NAT
   # Default is false
-  #respond: true
+  respond: true
 
   # delays a punch response for misbehaving NATs, default is 1 second.
   #delay: 1s
@@ -199,7 +199,7 @@ relay:
     - 192.168.100.1
     #- <other Nebula VPN IPs of hosts used as relays to access me>
   # Set am_relay to true to permit other hosts to list my IP in their relays config. Default false.
-  am_relay: true
+  am_relay: false
   # Set use_relays to false to prevent this instance from attempting to establish connections through relays.
   # default true
   use_relays: true
@@ -211,7 +211,7 @@ tun:
   # Name of the device. If not set, a default will be chosen by the OS.
   # For macOS: if set, must be in the form `utun[0-9]+`.
   # For NetBSD: Required to be set, must be in the form `tun[0-9]+`
-  dev: nebula1
+  dev: remote1
   # Toggles forwarding of local broadcast packets, the address of which depends on the ip/mask encoded in pki.cert
   drop_local_broadcast: false
   # Toggles forwarding of multicast packets
@@ -233,7 +233,7 @@ tun:
   # `metric`: will default to 0 if this option is not specified
   # `install`: will default to true, controls whether this route is installed in the systems routing table.
   # This setting is reloadable.
-  unsafe_routes:
+  #unsafe_routes:
     #- route: 172.16.1.0/24
     #  via: 192.168.100.99
     #  mtu: 1300

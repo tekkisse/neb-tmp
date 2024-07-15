@@ -199,7 +199,7 @@ relay:
     - 192.168.100.1
     #- <other Nebula VPN IPs of hosts used as relays to access me>
   # Set am_relay to true to permit other hosts to list my IP in their relays config. Default false.
-  am_relay: true
+  am_relay: false
   # Set use_relays to false to prevent this instance from attempting to establish connections through relays.
   # default true
   use_relays: true
